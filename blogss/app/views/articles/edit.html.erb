@@ -1,13 +1,21 @@
-<h2>Articulo</h2>
+<h2>Editar</h2>
 
-<%= form_with(model: @article, local: true) do |f| %>
-  <div>
-    <%= form.label :title%>
-    <%= form.text_field :title %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-
+<%= form_with(model: @article, local: true) do |form| %>
 <% end %>
+  <p>
+    <%= form.label :title%><br>
+    <%= form.text_field :title %>
+  </p>
+
+<p>
+<%= form.label :status%><br>
+    <%= form.text_field :status %>
+</p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+  <%= link_to 'volver', :action => :index %>
+
+
