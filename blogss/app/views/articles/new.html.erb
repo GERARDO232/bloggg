@@ -1,0 +1,13 @@
+<h2>Nuevo Articulo</h2>
+
+<%= form_with(model:@article, local:true) do |f|%>
+  <div>
+    <%=f.label :title %><br>
+    <%=f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+
+<% end %>

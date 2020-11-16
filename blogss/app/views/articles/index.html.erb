@@ -1,0 +1,18 @@
+<h1>Bienvenido</h1>
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>TITLE</th>
+	
+	</tr>
+<% @articles.each do |lista| %>
+	<tr>
+		<td><%= lista.id%></td>
+		<td><%= lista.title%></td>
+		
+		<td><%= link_to 'Mostrar', :action => :show, :id => lista.id%></td>
+		<td><%= link_to 'Editar', :action => :edit, :id => lista.id%></td>
+	</tr>
+	<%end%>
+</table>

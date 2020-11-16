@@ -1,0 +1,19 @@
+<h1>DATOS</h1>
+<br></br>
+<p>
+	<strong>ID:</strong>
+	<%= @article.id %>
+</p>
+<br>
+<p>
+	<strong>TITULO:</strong>
+	<%= @article.title %>
+	<br>
+
+
+<%= link_to 'volver||', :action => :index %>
+<%= link_to 'editar||', :action => :edit, :id => @article.id %>
+<%= link_to "Eliminar", @rticle,method: :delete,data: {confirm: "¿Estas seguro de eliminar?"}%>
+
+
+ 
